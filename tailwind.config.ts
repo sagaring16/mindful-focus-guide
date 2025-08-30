@@ -26,14 +26,11 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					soft: 'hsl(var(--primary-soft))',
-					glow: 'hsl(var(--primary-glow))'
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))',
-					soft: 'hsl(var(--secondary-soft))'
+					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -45,8 +42,7 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-					soft: 'hsl(var(--accent-soft))'
+					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -55,6 +51,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
 			borderRadius: {
@@ -78,45 +84,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'pulse-focus': {
-					'0%, 100%': {
-						transform: 'scale(1)',
-						opacity: '1'
-					},
-					'50%': {
-						transform: 'scale(1.05)',
-						opacity: '0.8'
-					}
-				},
-				'fade-in-up': {
-					from: {
-						opacity: '0',
-						transform: 'translateY(20px)'
-					},
-					to: {
-						opacity: '1',
-						transform: 'translateY(0)'
-					}
-				},
-				'rotate-timer': {
-					from: {
-						transform: 'rotate(0deg)'
-					},
-					to: {
-						transform: 'rotate(360deg)'
-					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'pulse-focus': 'pulse-focus 2s ease-in-out infinite',
-				'fade-in-up': 'fade-in-up 0.6s ease-out',
-				'rotate-timer': 'rotate-timer 60s linear infinite'
-			},
-			fontFamily: {
-				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
